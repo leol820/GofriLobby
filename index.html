@@ -3,15 +3,56 @@
 <head>
 <meta charset="UTF-8">
   <title>GofriLobby</title>
+  <style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
 </head>
 <body>
 <body style="background-color:#ADB136"> 
 <center> <h1> <font style="size:90;color:blue">Üdvözlünk a főoldalon ! </font> </h1>
 <h1> <font style="size:60;color:blue">☻Lépjen ki az oldalrol ha nem akar magának rosszat☻ </font> </h1> </center>
 <h3> <font style="font-size:30;color:blue">Itt találja meg amiket rólunk kell tudni! Sok szerencsét! </p> </h3>
-<a href="https://leol820.github.io/GofriKlubbTerroristaSzervezet/" style="text-decoration: none;font-size:30target="blank">Oldal I</a> <br>
-<a href="https://leol820.github.io/foshugyszar/" style="text-decoration: none;font-size:30target="blank">Oldal II</a> <br>
-<a href="https://leol820.github.io/alvilag/" style="text-decoration: none;font-size:30target="blank">Oldal III</a>
-  <center> <img border="0" src="fos.png" width="800" height="600"> </center>
+  <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="https://leol820.github.io/GofriKlubbTerroristaSzervezet/">Oldal I</a>
+    <a href="https://leol820.github.io/foshugyszar/">Oldal II</a>
+    <a href="https://leol820.github.io/alvilag/">Oldal III</a>
+  </div>
+</div>
+<center> <img border="0" src="fos.png" width="800" height="600"> </center>
 </body>
 </html>
